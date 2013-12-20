@@ -3,11 +3,11 @@ eWay Gateway API
 
 An integration module for accepting payments through the eWay gateway. 
 
-See http://www.eway.com.au for more details including API specs and to setup this gateway for yourself.
+More information can be found about the API here: `http://www.eway.com.au/developers/api`
 
 It installs server-side functions for the eWay payment gateway to your code.
 
-Initial release works with processing direct payments to both the live and sandbox environments.
+Initial release works with processing direct payments to both the live and sandbox environments. I will be implementing more features and payment processing methods soon.
 
 How to install
 ==============
@@ -20,8 +20,6 @@ How to use
 ==========
 
 This module will provide you with an `eWay` component to access the API.
-
-More information can be found about the API here: `http://www.eway.com.au/developers/api`
 
 ## Direct Payments
 
