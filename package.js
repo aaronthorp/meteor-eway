@@ -14,6 +14,10 @@ Package.on_use(function (api) {
 
   api.add_files('lib/eway/direct.js', 'server');
 
+  api.add_files('lib/eway/preauth_auth.js', 'server');
+  api.add_files('lib/eway/preauth_complete.js', 'server');
+  api.add_files('lib/eway/preauth_cancel.js', 'server');
+
   api.add_files('lib/eway/eway.js', 'server');
 
   if (typeof api.export !== 'undefined') {

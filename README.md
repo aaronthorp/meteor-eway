@@ -70,6 +70,48 @@ This should return the following result:
 }
 ```
 
+## PreAuth Payments
+
+### Pre Authorisation
+
+```js
+var result = eway.preauth('preauth', transaction);
+
+var result = eway.preauth('complete', transaction);
+
+var result = eway.preauth('cancel', transaction);
+
+```
+
+When calling this function, the transaction variable should contain the fields for the transaction (it requires certain fields to process so if any required fields are missing, an error will be returned.)
+
+The PreAuth function will place a hold on the sent amount on the customers credit card until either the `complete` or `cancel` function is called on the transaction.
+
+An example to the eWay sandbox:
+```js
+var trans = {
+	'TotalAmount': 2900,
+  'CardHoldersName': 'John Citizen', 
+  'CardNumber': '4444333322221111',
+  'CardExpiryMonth': "06",
+  'CardExpiryYear': "2014", 
+  'CVN': '123'
+};
+
+var result = ewaySandbox.preauth('preauth', trans);
+
+var post = {
+  'AuthTrxnNumber': result.TrxnNumber,
+  'TotalAmount': result.TotalAmount
+};
+
+var confirmedResult = ewaySandbox.preauth('complete', post);
+
+  or 
+
+var cancelledResult = ewaySandbox.preauth('cancel', post);
+```
+
 ## Token Payments
 *work in progress...*
 
