@@ -4,8 +4,16 @@ Package.describe({
 
 var both = ['client', 'server']
 
+Npm.depends({
+    "jsontoxml": "0.0.11",
+    "xml2js": "0.4.0",
+    "request": "2.30.0"
+});
+
 Package.on_use(function (api) {
 
+  api.add_files('lib/eway/direct.js', 'server');
+  
   api.add_files('lib/eway/eway.js', 'server');
 
   if (typeof api.export !== 'undefined') {
