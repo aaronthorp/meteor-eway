@@ -21,6 +21,8 @@ How to use
 
 This module will provide you with an `eWay` component to access the API.
 
+More information can be found about the API here: `http://www.eway.com.au/developers/api`
+
 ## Direct Payments
 
 `eWay.direct(customer_id, transaction, options);`
@@ -43,6 +45,21 @@ var result = eWay.direct("87654321", trans, {mode: 'sandbox'});
 console.log(result);
 		
 ```
+
+## Token Payments
+*work in progress...*
+
+## Recurring Payments
+*work in progress...*
+
+## Refunds
+*work in progress...*
+
+## Rapid Payments
+*work in progress...*
+
+## Stored Payments
+*work in progress...*
 
 License
 =======
