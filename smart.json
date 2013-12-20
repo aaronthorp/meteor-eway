@@ -1,0 +1,8 @@
+{
+  "name": "eway",
+  "description": "eWay Gateway, an Integration module for accepting payments through the eWay gateway. See http://www.eway.com.au.",
+  "homepage": "https://github.com/possibilities/meteor-cool-pkg",
+  "author": "Mike Bannister  (http://po.ssibiliti.es)",
+  "version": "0.1.0",
+  "git": "https://github.com/possibilities/meteor-cool-pkg.git",
+}
