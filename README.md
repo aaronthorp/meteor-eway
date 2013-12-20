@@ -1,4 +1,4 @@
-eWay Gateway API v0.0.3
+eWay Gateway API v0.0.4
 =======================
 
 An integration module for accepting payments through the eWay gateway. 
@@ -72,15 +72,12 @@ This should return the following result:
 
 ## PreAuth Payments
 
-### Pre Authorisation
-
 ```js
 var result = eway.preauth('preauth', transaction);
 
 var result = eway.preauth('complete', transaction);
 
 var result = eway.preauth('cancel', transaction);
-
 ```
 
 When calling this function, the transaction variable should contain the fields for the transaction (it requires certain fields to process so if any required fields are missing, an error will be returned.)
@@ -113,6 +110,16 @@ var cancelledResult = ewaySandbox.preauth('cancel', post);
 ```
 
 ## Token Payments
+
+```js
+var result = eway.token('createCustomer', transaction);
+
+var result = eway.token('updateCustomer', transaction); // Requires managedCustomerID to update
+```
+
+Currently working on this module, have developed a simple SOAP interface and `CreateCustomer` and `UpdateCustomer` is currently implemented, the remaining functions will
+be implemented in v0.0.5.
+
 *work in progress...*
 
 ## Recurring Payments
