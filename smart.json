@@ -2,7 +2,8 @@
   "name": "eway",
   "description": "eWay Gateway, an Integration module for accepting payments through the eWay gateway. See http://www.eway.com.au.",
   "homepage": "https://github.com/aaronthorp/meteor-eway",
-  "author": "Aaron Thorp  (http://aaronthorp.com)",
-  "version": "0.1.0",
-  "git": "https://github.com/aaronthorp/meteor-eway.git"
+  "author": "Aaron Thorp <athorp@gmail.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/aaronthorp/meteor-eway.git",
+  "packages": {}
 }
