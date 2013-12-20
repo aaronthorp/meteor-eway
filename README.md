@@ -1,5 +1,5 @@
-eWay Gateway API
-================
+eWay Gateway API v0.0.2
+=======================
 
 An integration module for accepting payments through the eWay gateway. 
 
@@ -21,27 +21,53 @@ How to use
 
 This module will provide you with an `eWay` component to access the API.
 
+To define the module, you create a new instance of the eWay module and pass in your eWay `customer_id` and optionally the mode of either `live` or `sandbox` (defaulting to live if not provided)
+
+```js
+var ewaySandbox = new eWay({customer_id: "87654321", mode: "sandbox"});
+
+var ewayLive = new eWay({customer_id: "87654321"});
+```
+
 ## Direct Payments
 
-`eWay.direct(customer_id, transaction, options);`
+```js
+var result = eway.direct(transaction);
+```
 
-When calling this function, the `customer_id` field is your merchant customer ID for eWay, the transaction is the fields for the transaction (it requires certain fields to process so if any required fields are missing, an error will be returned.)
+When calling this function, the transaction variable should contain the fields for the transaction (it requires certain fields to process so if any required fields are missing, an error will be returned.)
 
 An example to the eWay sandbox:
 ```js
 var trans = {
 	'TotalAmount':2900,
-    'CardHoldersName': 'Aaron Thorp', 
+    'CardHoldersName': 'John Citizen', 
     'CardNumber': '4444333322221111',
     'CardExpiryMonth': "06",
     'CardExpiryYear': "2014", 
     'CVN': '123'
 };
 
-var result = eWay.direct("87654321", trans, {mode: 'sandbox'});
+var result = ewaySandbox.direct(trans);
 
 console.log(result);
-		
+```
+
+This should return the following result:
+
+```
+{
+  TrxnStatus: true,
+  TrxnNumber: '20152',
+  TrxnReference: '',
+  TrxnOption1: '',
+  TrxnOption2: '',
+  TrxnOption3: '',
+  AuthCode: '123456',
+  ReturnAmount: '2900',
+  TrxnError: '00,Transaction Approved(Test CVN Gateway)',
+  TrxnMode: 'sandbox'
+}
 ```
 
 ## Token Payments
