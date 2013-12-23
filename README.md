@@ -1,4 +1,4 @@
-eWay Gateway API v0.0.4
+eWay Gateway API v0.0.5
 =======================
 
 An integration module for accepting payments through the eWay gateway. 
@@ -115,12 +115,12 @@ var cancelledResult = ewaySandbox.preauth('cancel', post);
 var result = eway.token('createCustomer', transaction);
 
 var result = eway.token('updateCustomer', transaction); // Requires managedCustomerID to update
+
+var result = eway.token('processPayment', transaction);
+
+var result = eway.token('queryPayment', transaction);
 ```
-
-Currently working on this module, have developed a simple SOAP interface and `CreateCustomer` and `UpdateCustomer` is currently implemented, the remaining functions will
-be implemented in v0.0.5.
-
-*work in progress...*
+See https://www.eway.com.au/eway-partner-portal/docs/resources/token-payments-field-description.pdf?sfvrsn=0 for more details on fields etc.
 
 ## Recurring Payments
 *work in progress...*

@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "eWay Gateway, an Integration module for accepting payments through the eWay gateway. See http://www.eway.com.au."
+  summary: "eWay Gateway, an Integration module for accepting payments through the eWay gateway."
 });
 
 var both = ['client', 'server'];
@@ -19,6 +19,7 @@ Package.on_use(function (api) {
   api.add_files('lib/preauth/preauth_cancel.js', 'server');
 
   api.add_files('lib/token/create_customer.js', 'server');
+  api.add_files('lib/token/create_payment.js', 'server');
 
   api.add_files('lib/eway.js', 'server');
 
