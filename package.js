@@ -12,6 +12,10 @@ Npm.depends({
 
 Package.on_use(function (api) {
 
+  api.use('underscore', 'server');
+
+  api.add_files('lib/functions.js', 'server');
+
   api.add_files('lib/direct/direct.js', 'server');
 
   api.add_files('lib/preauth/preauth_auth.js', 'server');
