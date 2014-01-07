@@ -1,0 +1,49 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/root/eway/packages/eway/package.js": "59fcd7f478234a84012d86f63ff32362ff88dcc4"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/root/eway/packages/eway/package.js": "59fcd7f478234a84012d86f63ff32362ff88dcc4",
+        "/root/eway/packages/eway/lib/functions.js": "5ea7525ce0787eee93a4fd798ce32725feed6836",
+        "/root/eway/packages/eway/lib/direct/direct.js": "863544bc2d6a3545345ae128d77098b21143590d",
+        "/root/eway/packages/eway/lib/preauth/preauth_auth.js": "7165a58b6a8cb46d42710f6128a3b77fb83b1397",
+        "/root/eway/packages/eway/lib/preauth/preauth_complete.js": "fc582a75a94189d1ceb7c352e555601dd5e7f3ba",
+        "/root/eway/packages/eway/lib/preauth/preauth_cancel.js": "9c05669d3a376a78a05f109840c41167a7f277d4",
+        "/root/eway/packages/eway/lib/token/create_customer.js": "703643b4b49d653dacc9e90a38a80c93e029efbe",
+        "/root/eway/packages/eway/lib/token/create_payment.js": "add6b8e8637c76dc34fd86007ff07f8cfba83735",
+        "/root/eway/packages/eway/lib/eway.js": "0877ff6513032f815f428e1af0fa4804e567e837"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/root/eway/packages/eway/package.js": "59fcd7f478234a84012d86f63ff32362ff88dcc4"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/root/eway/packages/eway/package.js": "59fcd7f478234a84012d86f63ff32362ff88dcc4"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/root/eway/packages/eway/package.js": "59fcd7f478234a84012d86f63ff32362ff88dcc4"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "eway": "/root/eway/packages/eway",
+    "meteor": "/root/.meteor/packages/meteor/c91bc503fa",
+    "underscore": "/root/.meteor/packages/underscore/cb996a9546"
+  },
+  "source": "/root/eway/packages/eway"
+}

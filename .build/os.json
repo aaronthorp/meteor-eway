@@ -1,0 +1,70 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [
+    {
+      "name": "eWay",
+      "export": true
+    },
+    {
+      "name": "FixArrays"
+    },
+    {
+      "name": "processDirectTransaction"
+    },
+    {
+      "name": "processPreAuthTransaction"
+    },
+    {
+      "name": "processPreCompTransaction"
+    },
+    {
+      "name": "processPreCancelTransaction"
+    },
+    {
+      "name": "processTokenCreateCustomer"
+    },
+    {
+      "name": "fut"
+    },
+    {
+      "name": "customerURL"
+    },
+    {
+      "name": "processTokenProcessPayment"
+    },
+    {
+      "name": "paymentURL"
+    },
+    {
+      "name": "Future"
+    },
+    {
+      "name": "jsonxml"
+    },
+    {
+      "name": "xml2js"
+    },
+    {
+      "name": "request"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "underscore"
+    }
+  ],
+  "node_modules": "npm/node_modules",
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/eway.js",
+      "length": 112518,
+      "offset": 0,
+      "servePath": "/packages/eway.js",
+      "sourceMap": "os/packages/eway.js.map"
+    }
+  ]
+}
